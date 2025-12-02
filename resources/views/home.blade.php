@@ -322,7 +322,7 @@
       <div class="col">
         <strong>Kontak</strong>
         <div style="margin-top:8px; color:var(--muted);">
-          langkahcerdas@gmail.com<br>+62 812-3456-7890
+          langkahcerdas2026@gmail.com<br>+62 812-3456-7890
         </div>
       </div>
     </div>

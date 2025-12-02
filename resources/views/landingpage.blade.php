@@ -92,16 +92,13 @@
 
     <div class="footer-column">
       <h4>KONTAK KAMI</h4>
-      <a href="mailto:langkahcerdas@gmail.com">langkahcerdas@gmail.com</a>
+      <a href="mailto:langkahcerdas2026@gmail.com">langkahcerdas@gmail.com</a>
     </div>
 
     <div class="footer-column">
       <h4>IKUTI KAMI</h4>
-      <a href="#">
+      <a href="{{ 'https://www.instagram.com/langkahcerdas2026?igsh=MTMxbHAwcmtiOXVkNA==' }}">
         <img src="{{ asset('asset/instagram.png') }}" alt="Instagram" class="social-icon" /> Instagram
-      </a>
-      <a href="#">
-        <img src="{{ asset('asset/facebook.png') }}" alt="Facebook" class="social-icon" /> Facebook
       </a>
     </div>
 
