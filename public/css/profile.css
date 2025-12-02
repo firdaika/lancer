@@ -1,0 +1,171 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #98B9EE;
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #1B449C;
+      position: relative;
+      height: 100px;
+    }
+
+    .back {
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .menu {
+      font-size: 24px;
+      cursor: pointer;
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .menu:hover {
+      transform: scale(1.1);
+    }
+
+    /* ====== MENU DROPDOWN ====== */
+    .dropdown {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #1B2E91;
+      width: 180px;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+      z-index: 100;
+    }
+
+    .dropdown.active {
+      display: flex;
+    }
+
+    .dropdown a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      transition: 0.3s;
+      font-size: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown a:last-child {
+      border-bottom: none;
+    }
+
+    /* ====== PROFILE SECTION ====== */
+    .profile-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .profile-photo img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .edit-btn {
+      background: none;
+      border: 1px solid white;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .edit-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* ====== STATISTIK ====== */
+    .stats-container {
+      background: rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      width: 90%;
+      margin: 30px auto;
+      text-align: left;
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+
+    .stats-container h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .stat-box {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      text-align: center;
+      padding: 12px;
+      min-width: 90px;
+    }
+
+    .stat-box i {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .achievement {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      padding: 10px 14px;
+      width: fit-content;
+    }
+
+    .achievement i {
+      font-size: 20px;
+    }

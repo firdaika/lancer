@@ -1,0 +1,155 @@
+/* Warna dasar */
+* .body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #76a6f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1e3a8a;
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    font-weight: 600;
+    box-sizing: border-box;
+  }
+  
+  .back {
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+
+  /* ===== SIDEBAR ===== */
+  .sidebar {
+    position: fixed;
+    top: 20px;
+    right: -250px;
+    width: 200px;
+    height: auto;
+    background: rgba(3, 34, 91, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 0 10px;
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    transition: right 0.4s ease;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  .sidebar.active {
+    right: 0;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.3s ease, padding-left 0.3s ease;
+  }
+
+  .sidebar a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 35px;
+  }
+  
+  /* Judul */
+  .judul {
+    color: #1e3a8a;
+    font-size: 1.8rem;
+    margin: 30px 0 20px;
+    margin-left: 470px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  /* Container Kartu */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Card Style */
+  .card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Ikon */
+  .icon {
+    background-color: #e0e7ff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Nama Kategori */
+  .card h2 {
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  /* Saat Dipilih */
+  .selected {
+    border: 3px solid #1e40af;
+    background-color: #bfdbfe;
+  }
+  
+  /* Tombol Selanjutnya */
+  button {
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 550px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

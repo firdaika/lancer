@@ -1,0 +1,224 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+    body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #001B50;
+            color: white;
+            margin: 0;
+        }
+
+        /* ------------------- SIDEBAR ------------------- */
+        .sidebar {
+            width: 240px;
+            background-color: #052A78;
+            padding: 20px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.12);
+            z-index: 100;
+        }
+
+        .sidebar img {
+            width: 170px;
+            margin: 8px auto 20px;
+            display: block;
+        }
+
+        .sidebar a {
+            display: block;
+            width: 100%;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            font-weight: 500;
+            text-align: left;
+            transition: background 0.15s, transform 0.08s;
+        }
+
+        .sidebar a + a {
+            margin-top: 4px;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            background-color: #001B50;
+            transform: translateX(4px);
+        }
+
+    /* Tombol logout */
+.logout-btn {
+  background-color: #D9534F;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  border-radius: 8px; /* tidak terlalu bulat */
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: calc(100% - 50px); /* sejajar dengan menu */
+  margin: 8px 25px; /* jarak sama seperti link menu */
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+    /* Main content */
+
+   /* Main content */
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+    background-color: #00236F;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: auto;
+    width: calc(100% - 240px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2856D1;
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+}
+
+.card i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.chart-container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#incomeChart {
+  width: 100% !important;
+  height: 400px !important;
+}
+    /* === Popup Logout === */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 20;
+    }
+
+    .popup {
+      background-color: #0034A1;
+      padding: 30px 40px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .popup h3 {
+      margin-bottom: 20px;
+    }
+
+    .popup button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .popup .yes-btn {
+      background-color: #D9534F;
+      color: white;
+    }
+
+    .popup .no-btn {
+      background-color: #2856D1;
+      color: white;
+    }
+
+    .popup .yes-btn:hover {
+      background-color: #c9302c;
+    }
+
+    .popup .no-btn:hover {
+      background-color: #1d47b1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+      }
+
+      .main-content {
+        padding: 20px;
+      }
+
+      .info-cards {
+        flex-direction: column;
+      }
+    }

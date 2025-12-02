@@ -1,0 +1,175 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: #98B9EE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Animasi muncul lembut */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    .login-container {
+      background: #1B449C;
+      width: 370px;
+      border-radius: 25px;
+      padding: 50px 30px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    /* Notch seperti kamera HP */
+    .login-container::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 15px;
+     
+      border-radius: 8px;
+    }
+
+    .logo {
+      width: 110px;
+      margin-bottom: 25px;
+      border-radius: 50%;
+      padding: 5px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      box-shadow: 0 0 5px #00c4ff;
+    }
+
+    .forgot {
+      text-align: right;
+      font-size: 12px;
+      margin-top: 3px;
+      margin-bottom: 15px;
+      color: white;
+      animation: fadeIn 1s ease-out 0.3s both;
+    }
+
+    .forgot a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .forgot a:hover {
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      background: #0093d0;
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: fadeIn 1s ease-out 0.4s both;
+    }
+
+    .login-btn:hover {
+      background: #00b1f1;
+      transform: scale(1.02);
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e0e0e0;
+      margin: 18px 0;
+      font-size: 13px;
+      animation: fadeIn 1s ease-out 0.6s both;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #ccc;
+      margin: 0 10px;
+    }
+
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 10px;
+      animation: fadeIn 1s ease-out 0.8s both;
+    }
+
+    .social img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .social img:hover {
+      transform: scale(1.15);
+    }
+
+    p {
+      font-size: 13px;
+      color: #e0e0e0;
+      animation: fadeIn 1s ease-out 1s both;
+    }
+
+    p a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 420px) {
+      .login-container {
+        width: 90%;
+        padding: 40px 20px;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+    }
