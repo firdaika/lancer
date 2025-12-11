@@ -153,7 +153,7 @@
 
     <div class="materi-preview-card">
       <div class="materi-icon">📹</div>
-      <div class="badge-video">Video</div>
+      <a class="badge-video" href="{{ 'https://youtu.be/64Ll9ZMzY6c?si=uf3CNXechcXeY8dX' }}">Video</a>
 
       <h4>Pinyin Dan Hanzi Dasar</h4>
       <p>Mandarin</p>
@@ -164,7 +164,7 @@
 
     <div class="materi-preview-card">
       <div class="materi-icon">📹</div>
-      <div class="badge-video">Video</div>
+      <a class="badge-video" href="{{ 'https://youtu.be/OR5dRtV9djA?si=7zDKaALCo-3qeGaS' }}">Video</a>
 
       <h4>Pengantar Aljabar Linear</h4>
       <p>Matematika</p>
@@ -175,7 +175,7 @@
 
     <div class="materi-preview-card">
       <div class="materi-icon">📹</div>
-      <div class="badge-video">Video</div>
+      <a class="badge-video" href="{{ 'https://youtu.be/r_YPjXZcQQY?si=EXDS3-Ikl9VAECmy' }}">Video</a>
 
       <h4>Motif Ekonomi</h4>
       <p>Ekonomi</p>
@@ -186,7 +186,7 @@
 
     <div class="materi-preview-card">
       <div class="materi-icon">📹</div>
-      <div class="badge-video">Video</div>
+      <a class="badge-video" href="{{ 'https://youtu.be/9ougG5fvA1I?si=u_iB04MIZUlhYyU4' }}">Video</a>
 
       <h4>Tahapan Kerja UI/UX Designer</h4>
       <p>UI/UX</p>

@@ -314,7 +314,7 @@ td {
 
     <input type="hidden" id="userId">
     <input type="text" id="nama" name="nama" placeholder="Nama">
-    <input type="date" id="ttl" name="ttl" placeholder="Tempat Tanggal Lahir">
+    <input type="text" id="ttl" name="ttl" placeholder="Tempat Tanggal Lahir">
     <input type="email" id="email" name="email" placeholder="Email">
 
     <div style="text-align:right;">
